@@ -4,6 +4,7 @@
 
 ## Overview
 Spider is a programming language that compiles to JavaScript. It takes the best ideas of Swift, Python, C# and CoffeeScript.
+
 See http://spiderlang.org/ for more information.
 
 ## Usage
