@@ -1,0 +1,15 @@
+
+func TimeMachine(pilot) {
+  this.pilot = pilot;
+
+  this.go = func (noise) {
+    console.log(this.pilot, noise);
+    return this.pilot + ' ' + noise;
+  };
+}
+
+return {
+    create: func(pilot) {
+        return new TimeMachine(pilot);
+    }
+};
