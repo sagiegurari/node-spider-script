@@ -1,4 +1,4 @@
-# node-spider-script v0.0.6
+# node-spider-script v0.0.7
 
 > Load spider script as any javascript modules under nodeJS runtime.
 
@@ -37,6 +37,7 @@ return {
 
 ## Release History
 
+ * 2014-11-22   v0.0.7   JSDoc changes
  * 2014-11-22   v0.0.6   Fixed pure require approach
  * 2014-11-22   v0.0.5   Initial release.
 
