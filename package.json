@@ -1,0 +1,27 @@
+{
+  "name": "node-spider-script",
+  "version": "0.0.1",
+  "description": "Run spider script files as javascript modules in NodeJS.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagiegurari/node-spider-script.git"
+  },
+  "keywords": [
+    "spider-script",
+    "require"
+  ],
+  "dependencies": {
+    "spider-script": "0.0.6",
+    "node.extend": "1.1.3"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "author": "Sagie Gur-Ari",
+  "license": "Apache 2"
+}
