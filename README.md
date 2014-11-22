@@ -37,7 +37,7 @@ return {
 
 ## Release History
 
- * 2014-11-22   v0.0.8   Internal improvements
+ * 2014-11-22   v0.0.9   Internal improvements
  * 2014-11-22   v0.0.7   JSDoc changes
  * 2014-11-22   v0.0.6   Fixed pure require approach
  * 2014-11-22   v0.0.5   Initial release.
