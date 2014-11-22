@@ -1,4 +1,4 @@
-# node-spider-script v0.0.7
+# node-spider-script
 
 > Load spider script as any javascript modules under nodeJS runtime.
 
@@ -17,7 +17,7 @@ require('node-spider-script');
 Now you can require your spider files like any other javascript files, for example:
 
 ```js
-var jsModule = require(spiderFile);
+var jsModule = require('./my-test.spider');
 
 var timeMachine = jsModule.create('my name');
 var output = timeMachine.go('my noise');
@@ -37,6 +37,7 @@ return {
 
 ## Release History
 
+ * 2014-11-22   v0.0.8   Internal improvements
  * 2014-11-22   v0.0.7   JSDoc changes
  * 2014-11-22   v0.0.6   Fixed pure require approach
  * 2014-11-22   v0.0.5   Initial release.

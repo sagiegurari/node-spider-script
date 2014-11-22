@@ -1,14 +1,18 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.7",
-  "description": "Run spider script files as javascript modules in NodeJS.",
+  "version": "0.0.8",
+  "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "lib": "lib",
+    "test": "test/spec"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/sagiegurari/node-spider-script.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sagiegurari/node-spider-script/issues"
   },
   "keywords": [
     "spider-script",
@@ -22,6 +26,9 @@
     "mocha": "*",
     "chai": "*"
   },
-  "author": "Sagie Gur-Ari",
+  "author": {
+    "name": "Sagie Gur-Ari",
+    "email": "sgurari@yahoo.com"
+  },
   "license": "Apache 2"
 }
