@@ -8,12 +8,6 @@ func TimeMachine(pilot) {
   };
 }
 
-module.exports = {
-    create: func(pilot) {
-        return new TimeMachine(pilot);
-    }
-};
-
 return {
     create: func(pilot) {
         return new TimeMachine(pilot);

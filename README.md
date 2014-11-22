@@ -1,4 +1,4 @@
-# node-spider-script v0.0.5
+# node-spider-script v0.0.6
 
 > Load spider script as any javascript modules under nodeJS runtime.
 
@@ -14,19 +14,30 @@ In order to use spider scripts under node, you need to first require this librar
 require('node-spider-script');
 ```
 
-Currently you need to use the spider loader to require spider files.
+Now you can require your spider files like any other javascript files, for example:
 
 ```js
-var spiderLoader = require('node-spider-script').spiderLoader;
-
-var jsModule = spiderLoader.loadSpiderScriptSync(spiderFile);
+var jsModule = require(spiderFile);
 
 var timeMachine = jsModule.create('my name');
 var output = timeMachine.go('my noise');
 ```
 
+In your spider file, instead of doing module.exports, do return to the object you wish to export.
+
+For example:
+
+```js
+return {
+    create: func(pilot) {
+        return new TimeMachine(pilot);
+    }
+};
+```
+
 ## Release History
 
+ * 2014-11-22   v0.0.6   Fixed pure require approach
  * 2014-11-22   v0.0.5   Initial release.
 
 ## License
