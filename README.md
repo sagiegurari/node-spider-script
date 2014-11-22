@@ -1,4 +1,4 @@
-# node-spider-script v0.0.3
+# node-spider-script v0.0.4
 
 > Load spider script as any javascript modules under nodeJS runtime.
 
@@ -25,7 +25,7 @@ var output = timeMachine.go('my noise');
 
 ## Release History
 
- * 2014-11-22   v0.0.3   Initial release.
+ * 2014-11-22   v0.0.4   Initial release.
 
 ## License
 Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.
