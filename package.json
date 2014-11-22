@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Run spider script files as javascript modules in NodeJS.",
   "main": "index.js",
   "directories": {
