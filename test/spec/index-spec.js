@@ -1,8 +1,9 @@
 'use strict';
+/*global describe: false, it: false */
 
 var chai = require('chai');
 var assert = chai.assert;
-var library = require('../../');
+require('../../');
 
 describe('Index Tests', function () {
     it('require setup', function () {
