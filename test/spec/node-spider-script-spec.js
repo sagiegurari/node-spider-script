@@ -23,14 +23,12 @@ describe('Node Spider Tests', function () {
     });
 
     it('require test', function () {
-        if (false) {
-            var spiderFile = path.resolve(__dirname, '../helpers/test.spider');
-            var jsModule = require(spiderFile);
+        var spiderFile = path.resolve(__dirname, '../helpers/test.spider');
+        var jsModule = require(spiderFile);
 
-            assert.isObject(jsModule);
-            var timeMachine = jsModule.create('my name');
-            var output = timeMachine.go('my noise');
-            assert.equal('my name my noise', output);
-        }
+        assert.isObject(jsModule);
+        var timeMachine = jsModule.create('my name');
+        var output = timeMachine.go('my noise');
+        assert.equal('my name my noise', output);
     });
 });
