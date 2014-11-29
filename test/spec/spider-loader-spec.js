@@ -11,11 +11,11 @@ describe('Spider Loader Tests', function () {
     describe('loadSpiderScriptSync Tests', function () {
         it('loadSpiderScriptSync valid', function () {
             var spiderFile = path.resolve(__dirname, '../helpers/test.spider');
-            var js = spiderLoader.loadSpiderScriptSync(spiderFile);
+            var js = spiderLoader.loadSpiderScript(spiderFile);
 
             assert.isObject(js);
-            var timeMachine = js.create('my name');
-            var output = timeMachine.go('my noise');
+            var person = js.create('my name');
+            var output = person.listen('my noise');
             assert.equal('my name my noise', output);
         });
     });

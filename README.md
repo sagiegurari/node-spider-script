@@ -19,8 +19,8 @@ Now you can require your spider files like any other javascript files, for examp
 ```js
 var jsModule = require('./my-test.spider');
 
-var timeMachine = jsModule.create('my name');
-var output = timeMachine.go('my noise');
+var person = jsModule.create('my name');
+var output = person.listen('my noise');
 ```
 
 In your spider file, instead of doing module.exports, do return to the object you wish to export.
@@ -29,15 +29,16 @@ For example:
 
 ```js
 return {
-    create: func(pilot) {
-        return new TimeMachine(pilot);
+    create: func(name) {
+        return new Person(name);
     }
 };
 ```
 
 ## Release History
 
- * 2014-11-22   v0.0.10   Internal improvements
+ * 2014-11-29   v0.0.11  Internal improvements
+ * 2014-11-22   v0.0.10  Internal improvements
  * 2014-11-22   v0.0.7   JSDoc changes
  * 2014-11-22   v0.0.6   Fixed pure require approach
  * 2014-11-22   v0.0.5   Initial release.
