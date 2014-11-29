@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
@@ -19,7 +19,7 @@
     "require"
   ],
   "dependencies": {
-    "spider-script": "^0.0.6",
+    "spider-script": "^0.0.7",
     "node.extend": "^1.1.3"
   },
   "devDependencies": {
