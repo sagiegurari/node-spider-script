@@ -35,8 +35,14 @@ return {
 };
 ```
 
+## Spider Dependency Issue
+Due to a bug in spider 0.1.x, currently spider 0.07 is the latest supported version.
+
+Once the issue is fixed, the package.json will be updated with the relevant version.
+
 ## Release History
 
+ * 2014-11-29   v0.0.12  Updated spider dependency
  * 2014-11-29   v0.0.11  Internal improvements
  * 2014-11-22   v0.0.10  Internal improvements
  * 2014-11-22   v0.0.7   JSDoc changes
