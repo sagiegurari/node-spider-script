@@ -16,11 +16,11 @@ describe('Node Spider Tests', function () {
         var spiderLoader = library.spiderLoader;
 
         var spiderFile = path.resolve(__dirname, '../helpers/test.spider');
-        var jsModule = spiderLoader.loadSpiderScriptSync(spiderFile);
+        var jsModule = spiderLoader.loadSpiderScript(spiderFile);
 
         assert.isObject(jsModule);
-        var timeMachine = jsModule.create('my name');
-        var output = timeMachine.go('my noise');
+        var person = jsModule.create('my name');
+        var output = person.listen('my noise');
         assert.equal('my name my noise', output);
     });
 
@@ -29,8 +29,8 @@ describe('Node Spider Tests', function () {
         var jsModule = require(spiderFile);
 
         assert.isObject(jsModule);
-        var timeMachine = jsModule.create('my name');
-        var output = timeMachine.go('my noise');
+        var person = jsModule.create('my name');
+        var output = person.listen('my noise');
         assert.equal('my name my noise', output);
     });
 });

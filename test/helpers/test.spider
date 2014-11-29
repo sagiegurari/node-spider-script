@@ -1,15 +1,15 @@
 
-func TimeMachine(pilot) {
-  this.pilot = pilot;
+func Person(name) {
+  this.name = name;
 
-  this.go = func (noise) {
-    console.log(this.pilot, noise);
-    return this.pilot + ' ' + noise;
+  this.listen = func (text) {
+    console.log(this.name, text);
+    return this.name + ' ' + text;
   };
 }
 
 return {
-    create: func(pilot) {
-        return new TimeMachine(pilot);
+    create: func(name) {
+        return new Person(name);
     }
 };
