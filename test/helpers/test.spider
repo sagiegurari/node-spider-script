@@ -1,15 +1,15 @@
 
-func Person(name) {
+fn Person(name) {
   this.name = name;
 
-  this.listen = func (text) {
+  this.listen = fn (text) {
     console.log(this.name, text);
     return this.name + ' ' + text;
   };
 }
 
 return {
-    create: func(name) {
+    create: fn(name) {
         return new Person(name);
     }
 };
