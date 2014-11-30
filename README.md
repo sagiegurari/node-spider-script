@@ -1,5 +1,7 @@
 # node-spider-script
 
+[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script)
+
 > Load spider script as any javascript modules under nodeJS runtime.
 
 ## Overview
@@ -29,19 +31,15 @@ For example:
 
 ```js
 return {
-    create: func(name) {
+    create: fn(name) {
         return new Person(name);
     }
 };
 ```
 
-## Spider Dependency Issue
-Due to a bug in spider 0.1.x, currently spider 0.07 is the latest supported version.
-
-Once the issue is fixed, the package.json will be updated with the relevant version.
-
 ## Release History
 
+ * 2014-11-30   v0.0.13  Internal changes due to spider dependency changes
  * 2014-11-29   v0.0.12  Updated spider dependency
  * 2014-11-29   v0.0.11  Internal improvements
  * 2014-11-22   v0.0.10  Internal improvements
