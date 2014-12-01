@@ -91,12 +91,68 @@ module.exports = function (grunt) {
             }
         },
 
+        copy: {
+            coverage: {
+                files: [
+                    {
+                        expand: true,
+                        src: ['index.js'],
+                        dest: '<%=BuildConfig.targetDirectory%>/coverage'
+                    },
+                    {
+                        expand: true,
+                        src: ['<%=BuildConfig.testDirectory%>/spec/**'],
+                        dest: '<%=BuildConfig.targetDirectory%>/coverage'
+                    },
+                    {
+                        expand: true,
+                        src: ['<%=BuildConfig.testDirectory%>/helpers/**/*.spider'],
+                        dest: '<%=BuildConfig.targetDirectory%>/coverage'
+                    }
+                ]
+            }
+        },
+
+        blanket: {
+            full: {
+                files: {
+                    'target/coverage/lib': ['<%=BuildConfig.libDirectory%>/']
+                }
+            }
+        },
+
         mochaTest: {
             full: {
                 options: {
                     reporter: 'spec'
                 },
                 src: ['./<%=BuildConfig.testDirectory%>/**/*spec.js']
+            },
+            coverageLCOV: {
+                options: {
+                    require: 'blanket',
+                    reporter: 'mocha-lcov-reporter',
+                    quiet: true,
+                    captureFile: '<%=BuildConfig.targetDirectory%>/coverage/report/coverage.info'
+                },
+                src: ['./<%=BuildConfig.targetDirectory%>/coverage/test/**/*spec.js']
+            },
+            coverageHTML: {
+                options: {
+                    reporter: 'html-cov',
+                    quiet: true,
+                    captureFile: '<%=BuildConfig.targetDirectory%>/coverage/report/coverage.html'
+                },
+                src: ['./<%=BuildConfig.targetDirectory%>/coverage/test/**/*spec.js']
+            }
+        },
+
+        coveralls: {
+            options: {
+                force: false
+            },
+            full: {
+                src: '<%=BuildConfig.targetDirectory%>/coverage/report/*.info'
             }
         },
 
@@ -123,10 +179,16 @@ module.exports = function (grunt) {
         'eslint:full',
         'todos:full',
         'jsdoc:full',
-        'test'
+        'copy:coverage',
+        'blanket:full',
+        'mochaTest:coverageHTML'
     ]);
 
     grunt.registerTask('test', 'Run all module tests cases.', [
-        'mochaTest:full'
+        'clean:target',
+        'copy:coverage',
+        'blanket:full',
+        'mochaTest:coverageLCOV',
+        'coveralls:full'
     ]);
 };
