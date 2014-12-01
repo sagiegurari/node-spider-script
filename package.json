@@ -24,18 +24,23 @@
   },
   "devDependencies": {
     "mocha": "*",
+    "blanket": "*",
+    "mocha-lcov-reporter": "*",
     "chai": "*",
     "grunt": "*",
     "grunt-cli": "*",
     "load-grunt-tasks": "*",
     "time-grunt": "*",
     "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*",
     "grunt-jsonlint": "*",
     "grunt-contrib-jshint": "*",
     "grunt-jslint": "*",
     "grunt-eslint": "*",
     "grunt-todos": "*",
     "grunt-mocha-test": "*",
+    "grunt-blanket": "*",
+    "grunt-coveralls": "*",
     "grunt-jsdoc": "*"
   },
   "author": {
@@ -45,5 +50,10 @@
   "license": "Apache 2",
   "scripts": {
     "test": "grunt test"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "test/spec/*-spec.js"
+    }
   }
 }

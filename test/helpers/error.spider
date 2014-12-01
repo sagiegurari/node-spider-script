@@ -1,0 +1,9 @@
+
+fn123 InvalidCode() {
+}
+
+return {
+    create: fn() {
+        return new InvalidCode();
+    }
+};
