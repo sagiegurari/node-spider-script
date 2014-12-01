@@ -149,7 +149,7 @@ module.exports = function (grunt) {
 
         coveralls: {
             options: {
-                force: false
+                force: true
             },
             full: {
                 src: '<%=BuildConfig.targetDirectory%>/coverage/report/*.info'
