@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
@@ -24,11 +24,26 @@
   },
   "devDependencies": {
     "mocha": "*",
-    "chai": "*"
+    "chai": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-jsonlint": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-jslint": "*",
+    "grunt-eslint": "*",
+    "grunt-todos": "*",
+    "grunt-mocha-test": "*",
+    "grunt-jsdoc": "*"
   },
   "author": {
     "name": "Sagie Gur-Ari",
     "email": "sgurari@yahoo.com"
   },
-  "license": "Apache 2"
+  "license": "Apache 2",
+  "scripts": {
+    "test": "grunt test"
+  }
 }

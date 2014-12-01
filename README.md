@@ -1,6 +1,6 @@
 # node-spider-script
 
-[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script)
+[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Dependencies](http://img.shields.io/david/sagiegurari/node-spider-script.svg?style=flat)](https://david-dm.org/sagiegurari/node-spider-script)
 
 > Load spider script as any javascript modules under nodeJS runtime.
 
@@ -39,6 +39,7 @@ return {
 
 ## Release History
 
+ * XXXXXXXXXX   v0.0.14  In Development....
  * 2014-11-30   v0.0.13  Internal changes due to spider dependency changes
  * 2014-11-29   v0.0.12  Updated spider dependency
  * 2014-11-29   v0.0.11  Internal improvements

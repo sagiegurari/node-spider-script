@@ -1,3 +1,4 @@
-node_modules
 .idea
+target
+node_modules
 npm-debug.log
