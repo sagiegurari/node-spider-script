@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
