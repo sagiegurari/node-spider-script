@@ -1,6 +1,6 @@
 # node-spider-script
 
-[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Build Status](https://img.shields.io/travis/sagiegurari/node-spider-script.svg?style=flat)](http://travis-ci.org/sagiegurari/node-spider-script) [![Dependencies](http://img.shields.io/david/sagiegurari/node-spider-script.svg?style=flat)](https://david-dm.org/sagiegurari/node-spider-script) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-spider-script.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-spider-script)
+[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Build Status](https://img.shields.io/travis/sagiegurari/node-spider-script.svg?style=flat)](http://travis-ci.org/sagiegurari/node-spider-script) [![Dependencies](http://img.shields.io/david/sagiegurari/node-spider-script.svg?style=flat)](https://david-dm.org/sagiegurari/node-spider-script) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-spider-script.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-spider-script) [![License](https://img.shields.io/npm/l/node-spider-script.svg?style=flat)](https://github.com/sagiegurari/node-spider-script/blob/master/LICENSE)
 
 > Load spider script as any javascript modules under nodeJS runtime.
 
@@ -39,6 +39,7 @@ return {
 
 ## Release History
 
+ * 2014-12-07   v0.0.17  Doc changes
  * 2014-12-07   v0.0.16  Minor internal changes
  * 2014-12-02   v0.0.15  Doc change
  * 2014-12-01   v0.0.14  Added continues integration support for the project
