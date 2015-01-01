@@ -53,3 +53,7 @@ return {
 
 ## License
 Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sagiegurari/node-spider-script/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
