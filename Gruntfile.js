@@ -168,6 +168,17 @@ module.exports = function (grunt) {
                     'private': true
                 }
             }
+        },
+
+        jsdoc2md: {
+            api: {
+                options: {
+                    index: true,
+                    'private': true
+                },
+                src: '<%=BuildConfig.libDirectory%>/**/*.js',
+                dest: 'docs/api.md'
+            }
         }
     });
 
@@ -179,6 +190,7 @@ module.exports = function (grunt) {
         'eslint:full',
         'todos:full',
         'jsdoc:full',
+        'jsdoc2md:api',
         'copy:coverage',
         'blanket:full',
         'mochaTest:coverageHTML'
@@ -190,5 +202,14 @@ module.exports = function (grunt) {
         'blanket:full',
         'mochaTest:coverageLCOV',
         'coveralls:full'
+    ]);
+
+    grunt.registerTask('continuesIntegration', 'Continues integration related tasks.', [
+        'jsonlint:full',
+        'jshint:full',
+        'jslint:full',
+        'eslint:full',
+        'todos:full',
+        'test'
     ]);
 };
