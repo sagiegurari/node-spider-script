@@ -82,7 +82,6 @@ fn Person(name) {
  this.name = name;
 
  this.listen = fn (text) {
-   //console.log(this.name, text);
    return this.name + ' ' + text;
  };
 }
