@@ -37,6 +37,36 @@ return {
 };
 ```
 
+Full example (Spider):
+
+```js
+fn Person(name) {
+  this.name = name;
+
+  this.listen = fn (text) {
+    //console.log(this.name, text);
+    return this.name + ' ' + text;
+  };
+}
+
+return {
+    create: fn(name) {
+        return new Person(name);
+    }
+};
+```
+
+Full example (JavaScript):
+
+```js
+require('node-spider-script');
+
+var jsModule = require('./my-test.spider');
+
+var person = jsModule.create('my name');
+var output = person.listen('my noise');
+```
+
 ## API Documentation
 See full docs at: [API Docs](docs/api.md)
 
@@ -44,7 +74,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-02-21  | v0.0.21  | Maintenance |
+| 2015-02-23  | v0.0.22  | Maintenance |
 | 2015-02-06  | v0.0.20  | Grunt cleanups. |
 | 2015-02-06  | v0.0.19  | Doc changes |
 | 2014-12-07  | v0.0.16  | Minor internal changes |

@@ -10,6 +10,7 @@
 **Namespaces**
 
 * [NodeSpiderScript](#NodeSpiderScript)
+  * [NodeSpiderScript.spiderLoader](#NodeSpiderScript.spiderLoader)
   * [NodeSpiderScript.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
  
 <a name="SpiderLoader"></a>
@@ -26,7 +27,6 @@
 The SpiderLoader enables to load spider script files and to load them into the
 node runtime as JS files.
 
-**Access**: private  
 **Author**: Sagie Gur-Ari  
 <a name="SpiderLoader#runSpiderScript2JS"></a>
 ##SpiderLoader#runSpiderScript2JS(spiderFile)
@@ -57,8 +57,14 @@ script files as JS files.
 **Members**
 
 * [NodeSpiderScript](#NodeSpiderScript)
+  * [NodeSpiderScript.spiderLoader](#NodeSpiderScript.spiderLoader)
   * [NodeSpiderScript.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
 
+<a name="NodeSpiderScript.spiderLoader"></a>
+##NodeSpiderScript.spiderLoader
+The spider loader instance.
+
+**Type**: [SpiderLoader](#SpiderLoader)  
 <a name="NodeSpiderScript.requireSpider"></a>
 ##NodeSpiderScript.requireSpider(spiderModule, fileName)
 The node require implementation for spider scripts.
