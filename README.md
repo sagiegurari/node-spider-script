@@ -1,6 +1,6 @@
 # node-spider-script
 
-[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Build Status](https://img.shields.io/travis/sagiegurari/node-spider-script.svg?style=flat)](http://travis-ci.org/sagiegurari/node-spider-script) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-spider-script.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-spider-script) [![bitHound Score](https://www.bithound.io/sagiegurari/node-spider-script/badges/score.svg)](https://www.bithound.io/sagiegurari/node-spider-script) [![License](https://img.shields.io/npm/l/node-spider-script.svg?style=flat)](https://github.com/sagiegurari/node-spider-script/blob/master/LICENSE)<br>
+[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Build Status](https://img.shields.io/travis/sagiegurari/node-spider-script.svg?style=flat)](http://travis-ci.org/sagiegurari/node-spider-script) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-spider-script.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-spider-script) [![bitHound Score](https://www.bithound.io/sagiegurari/node-spider-script/badges/score.svg)](https://www.bithound.io/sagiegurari/node-spider-script) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-spider-script.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-spider-script) [![License](https://img.shields.io/npm/l/node-spider-script.svg?style=flat)](https://github.com/sagiegurari/node-spider-script/blob/master/LICENSE)<br>
 [![Dependencies](http://img.shields.io/david/sagiegurari/node-spider-script.svg?style=flat)](https://david-dm.org/sagiegurari/node-spider-script) [![DevDependencies](http://img.shields.io/david/dev/sagiegurari/node-spider-script.svg?style=flat)](https://david-dm.org/sagiegurari/node-spider-script#info=devDependencies)
 
 > Load spider script as any javascript modules under nodeJS runtime.
@@ -74,7 +74,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-02-23  | v0.0.24  | Maintenance |
+| 2015-02-28  | v0.0.25  | Maintenance |
 | 2015-02-06  | v0.0.20  | Grunt cleanups. |
 | 2015-02-06  | v0.0.19  | Doc changes |
 | 2014-12-07  | v0.0.16  | Minor internal changes |
