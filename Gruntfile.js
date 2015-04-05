@@ -76,6 +76,20 @@ module.exports = function (grunt) {
             }
         },
 
+        jscs: {
+            full: {
+                options: {
+                    config: '.jscs.json'
+                },
+                files: {
+                    src: [
+                        '*.js',
+                        '<%=BuildConfig.libDirectory%>/**/*.js'
+                    ]
+                }
+            }
+        },
+
         todos: {
             options: {
                 priorities: {
@@ -174,6 +188,7 @@ module.exports = function (grunt) {
         'jshint:full',
         'jslint:full',
         'eslint:full',
+        'jscs:full',
         'todos:full',
         'jsdoc2md:api',
         'copy:coverage',
@@ -194,6 +209,7 @@ module.exports = function (grunt) {
         'jshint:full',
         'jslint:full',
         'eslint:full',
+        'jscs:full',
         'todos:full',
         'test'
     ]);

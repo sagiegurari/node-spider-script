@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
@@ -33,6 +33,7 @@
     "grunt-contrib-jshint": "*",
     "grunt-coveralls": "*",
     "grunt-eslint": "*",
+    "grunt-jscs": "*",
     "grunt-jsdoc-to-markdown": "*",
     "grunt-jslint": "*",
     "grunt-jsonlint": "*",
