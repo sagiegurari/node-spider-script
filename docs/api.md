@@ -59,47 +59,46 @@ script files as JS files.
 **Author:** Sagie Gur-Ari  
 **Example**  
 In order to use spider scripts under node, you need to first require this library as follows:
- ```js
- require('node-spider-script');
- ```
- Now you can require your spider files like any other javascript files, for example:
- ```js
- var jsModule = require('./my-test.spider');
+```js
+require('node-spider-script');
+```
+Now you can require your spider files like any other javascript files, for example:
+```js
+var jsModule = require('./my-test.spider');
 
- var person = jsModule.create('my name');
- var output = person.listen('my noise');
- ```
- In your spider file, instead of doing module.exports, do return to the object you wish to export.
+var person = jsModule.create('my name');
+var output = person.listen('my noise');
+```
+In your spider file, instead of doing module.exports, do return to the object you wish to export.
 
- For example:
- ```js
- return {
-    create: fn(name) {
-        return new Person(name);
-    }
+For example:
+```js
+return {
+   create: fn(name) {
+       return new Person(name);
+   }
+};
+```
+Spider source:
+```js
+fn Person(name) {
+ this.name = name;
+
+ this.listen = fn (text) {
+   return this.name + ' ' + text;
  };
- ```
- Spider source:
- ```js
- fn Person(name) {
-  this.name = name;
+}
 
-  this.listen = fn (text) {
-    return this.name + ' ' + text;
-  };
- }
-
- return {
-    create: fn(name) {
-        return new Person(name);
-    }
- };
- ```
+return {
+   create: fn(name) {
+       return new Person(name);
+   }
+};
+```
 
 * [NodeSpiderScript](#NodeSpiderScript) : <code>object</code>
   * [.spiderLoader](#NodeSpiderScript.spiderLoader) : <code>[SpiderLoader](#SpiderLoader)</code>
-  * _static_
-    * [.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
+  * [.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
 
 <a name="NodeSpiderScript.spiderLoader"></a>
 ### NodeSpiderScript.spiderLoader : <code>[SpiderLoader](#SpiderLoader)</code>
@@ -110,7 +109,6 @@ The spider loader instance.
 ### NodeSpiderScript.requireSpider(spiderModule, fileName)
 The node require implementation for spider scripts.
 
-**Kind**: static method of <code>[NodeSpiderScript](#NodeSpiderScript)</code>  
 **Access:** public  
 
 | Param | Type | Description |
