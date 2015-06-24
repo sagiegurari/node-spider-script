@@ -1,115 +1,120 @@
-#Index
-
-**Classes**
-
-* [class: SpiderLoader](#SpiderLoader)
-  * [new SpiderLoader()](#new_SpiderLoader)
-  * [SpiderLoader#runSpiderScript2JS(spiderFile)](#SpiderLoader#runSpiderScript2JS)
-  * [SpiderLoader#loadSpiderScript(spiderFile, [spiderModule])](#SpiderLoader#loadSpiderScript)
-
-**Namespaces**
-
-* [NodeSpiderScript](#NodeSpiderScript)
-  * [NodeSpiderScript.spiderLoader](#NodeSpiderScript.spiderLoader)
-  * [NodeSpiderScript.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
- 
+## Classes
+<dl>
+<dt><a href="#SpiderLoader">SpiderLoader</a></dt>
+<dd></dd>
+</dl>
+## Objects
+<dl>
+<dt><a href="#NodeSpiderScript">NodeSpiderScript</a> : <code>object</code></dt>
+<dd><p>Extends the require capabilities to allow loading of spider
+script files as JS files.</p>
+</dd>
+</dl>
 <a name="SpiderLoader"></a>
-#class: SpiderLoader
-**Members**
+## SpiderLoader
+**Kind**: global class  
+**Access:** public  
+**Author:** Sagie Gur-Ari  
 
-* [class: SpiderLoader](#SpiderLoader)
-  * [new SpiderLoader()](#new_SpiderLoader)
-  * [SpiderLoader#runSpiderScript2JS(spiderFile)](#SpiderLoader#runSpiderScript2JS)
-  * [SpiderLoader#loadSpiderScript(spiderFile, [spiderModule])](#SpiderLoader#loadSpiderScript)
+* [SpiderLoader](#SpiderLoader)
+  * [new SpiderLoader()](#new_SpiderLoader_new)
+  * [#runSpiderScript2JS(spiderFile)](#SpiderLoader+runSpiderScript2JS) ⇒ <code>string</code>
+  * [#loadSpiderScript(spiderFile, [spiderModule])](#SpiderLoader+loadSpiderScript) ⇒ <code>object</code>
 
-<a name="new_SpiderLoader"></a>
-##new SpiderLoader()
+<a name="new_SpiderLoader_new"></a>
+### new SpiderLoader()
 The SpiderLoader enables to load spider script files and to load them into the
 node runtime as JS files.
 
-**Author**: Sagie Gur-Ari  
-<a name="SpiderLoader#runSpiderScript2JS"></a>
-##SpiderLoader#runSpiderScript2JS(spiderFile)
+<a name="SpiderLoader+runSpiderScript2JS"></a>
+### SpiderLoader#runSpiderScript2JS(spiderFile) ⇒ <code>string</code>
 Converts the provided spider file into JS script text
 
-**Params**
+**Returns**: <code>string</code> - The JS string of the converted spider script  
+**Access:** public  
 
-- spiderFile `string` - The spider script file path  
+| Param | Type | Description |
+| --- | --- | --- |
+| spiderFile | <code>string</code> | The spider script file path |
 
-**Returns**: `string` - The JS string of the converted spider script  
-<a name="SpiderLoader#loadSpiderScript"></a>
-##SpiderLoader#loadSpiderScript(spiderFile, [spiderModule])
+<a name="SpiderLoader+loadSpiderScript"></a>
+### SpiderLoader#loadSpiderScript(spiderFile, [spiderModule]) ⇒ <code>object</code>
 Converts the provided spider file into JS script and loads it into
 the node runtime.
 
-**Params**
+**Returns**: <code>object</code> - The JS module  
+**Access:** public  
 
-- spiderFile `string` - The spider script file path  
-- \[spiderModule\] `object` - The module for the spider script  
+| Param | Type | Description |
+| --- | --- | --- |
+| spiderFile | <code>string</code> | The spider script file path |
+| [spiderModule] | <code>object</code> | The module for the spider script |
 
-**Returns**: `object` - The JS module  
 <a name="NodeSpiderScript"></a>
-#NodeSpiderScript
+## NodeSpiderScript : <code>object</code>
 Extends the require capabilities to allow loading of spider
 script files as JS files.
 
-**Author**: Sagie Gur-Ari  
+**Kind**: global namespace  
+**Author:** Sagie Gur-Ari  
 **Example**  
 In order to use spider scripts under node, you need to first require this library as follows:
-```js
-require('node-spider-script');
-```
-Now you can require your spider files like any other javascript files, for example:
-```js
-var jsModule = require('./my-test.spider');
+ ```js
+ require('node-spider-script');
+ ```
+ Now you can require your spider files like any other javascript files, for example:
+ ```js
+ var jsModule = require('./my-test.spider');
 
-var person = jsModule.create('my name');
-var output = person.listen('my noise');
-```
-In your spider file, instead of doing module.exports, do return to the object you wish to export.
+ var person = jsModule.create('my name');
+ var output = person.listen('my noise');
+ ```
+ In your spider file, instead of doing module.exports, do return to the object you wish to export.
 
-For example:
-```js
-return {
-   create: fn(name) {
-       return new Person(name);
-   }
-};
-```
-Spider source:
-```js
-fn Person(name) {
- this.name = name;
-
- this.listen = fn (text) {
-   return this.name + ' ' + text;
+ For example:
+ ```js
+ return {
+    create: fn(name) {
+        return new Person(name);
+    }
  };
-}
+ ```
+ Spider source:
+ ```js
+ fn Person(name) {
+  this.name = name;
 
-return {
-   create: fn(name) {
-       return new Person(name);
-   }
-};
-```
+  this.listen = fn (text) {
+    return this.name + ' ' + text;
+  };
+ }
 
-**Members**
+ return {
+    create: fn(name) {
+        return new Person(name);
+    }
+ };
+ ```
 
-* [NodeSpiderScript](#NodeSpiderScript)
-  * [NodeSpiderScript.spiderLoader](#NodeSpiderScript.spiderLoader)
-  * [NodeSpiderScript.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
+* [NodeSpiderScript](#NodeSpiderScript) : <code>object</code>
+  * [.spiderLoader](#NodeSpiderScript.spiderLoader) : <code>[SpiderLoader](#SpiderLoader)</code>
+  * _static_
+    * [.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
 
 <a name="NodeSpiderScript.spiderLoader"></a>
-##NodeSpiderScript.spiderLoader
+### NodeSpiderScript.spiderLoader : <code>[SpiderLoader](#SpiderLoader)</code>
 The spider loader instance.
 
-**Type**: [SpiderLoader](#SpiderLoader)  
+**Access:** public  
 <a name="NodeSpiderScript.requireSpider"></a>
-##NodeSpiderScript.requireSpider(spiderModule, fileName)
+### NodeSpiderScript.requireSpider(spiderModule, fileName)
 The node require implementation for spider scripts.
 
-**Params**
+**Kind**: static method of <code>[NodeSpiderScript](#NodeSpiderScript)</code>  
+**Access:** public  
 
-- spiderModule `object` - The module for the spider script  
-- fileName `string` - The spider script file name  
+| Param | Type | Description |
+| --- | --- | --- |
+| spiderModule | <code>object</code> | The module for the spider script |
+| fileName | <code>string</code> | The spider script file name |
 
