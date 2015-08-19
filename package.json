@@ -1,18 +1,19 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.33",
+  "version": "0.0.34",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "test/spec"
   },
+  "homepage": "http://github.com/sagiegurari/node-spider-script",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sagiegurari/node-spider-script.git"
+    "url": "http://github.com/sagiegurari/node-spider-script.git"
   },
   "bugs": {
-    "url": "https://github.com/sagiegurari/node-spider-script/issues"
+    "url": "http://github.com/sagiegurari/node-spider-script/issues"
   },
   "keywords": [
     "spider-script",
