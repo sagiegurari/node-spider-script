@@ -74,7 +74,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-09-08  | v0.0.37  | Maintenance |
+| 2015-09-23  | v0.0.38  | Maintenance |
 | 2015-02-06  | v0.0.20  | Grunt cleanups. |
 | 2015-02-06  | v0.0.19  | Doc changes |
 | 2014-12-07  | v0.0.16  | Minor internal changes |
