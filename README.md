@@ -1,15 +1,23 @@
 # node-spider-script
 
-[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Build Status](https://img.shields.io/travis/sagiegurari/node-spider-script.svg?style=flat)](http://travis-ci.org/sagiegurari/node-spider-script) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/node-spider-script.svg?style=flat)](https://coveralls.io/r/sagiegurari/node-spider-script) [![Code Climate](https://codeclimate.com/github/sagiegurari/node-spider-script/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/node-spider-script) [![bitHound Score](https://www.bithound.io/sagiegurari/node-spider-script/badges/score.svg)](https://www.bithound.io/sagiegurari/node-spider-script) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-spider-script.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-spider-script)<br>
-[![License](https://img.shields.io/npm/l/node-spider-script.svg?style=flat)](https://github.com/sagiegurari/node-spider-script/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Dependencies](http://img.shields.io/david/sagiegurari/node-spider-script.svg?style=flat)](https://david-dm.org/sagiegurari/node-spider-script) [![DevDependencies](http://img.shields.io/david/dev/sagiegurari/node-spider-script.svg?style=flat)](https://david-dm.org/sagiegurari/node-spider-script#info=devDependencies)
+[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Build Status](https://travis-ci.org/sagiegurari/node-spider-script.svg)](http://travis-ci.org/sagiegurari/node-spider-script) [![Coverage Status](https://coveralls.io/repos/sagiegurari/node-spider-script/badge.svg)](https://coveralls.io/r/sagiegurari/node-spider-script) [![Code Climate](https://codeclimate.com/github/sagiegurari/node-spider-script/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/node-spider-script) [![bitHound Score](https://www.bithound.io/sagiegurari/node-spider-script/badges/score.svg)](https://www.bithound.io/sagiegurari/node-spider-script) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-spider-script.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-spider-script)<br>
+[![License](https://img.shields.io/npm/l/node-spider-script.svg?style=flat)](https://github.com/sagiegurari/node-spider-script/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Dependency Status](https://david-dm.org/sagiegurari/node-spider-script.svg)](https://david-dm.org/sagiegurari/node-spider-script) [![devDependency Status](https://david-dm.org/sagiegurari/node-spider-script/dev-status.svg)](https://david-dm.org/sagiegurari/node-spider-script#info=devDependencies)
 
 > Load spider script as any javascript modules under nodeJS runtime.
 
+* [Overview](#overview)
+* [Usage](#usage)
+* [API Documentation](docs/api.md)
+* [Release History](#history)
+* [License](#license)
+
+<a name="overview"></a>
 ## Overview
 Spider is a programming language that compiles to JavaScript. It takes the best ideas of Swift, Python, C# and CoffeeScript.
 
 See http://spiderlang.org/ for more information.
 
+<a name="usage"></a>
 ## Usage
 In order to use spider scripts under node, you need to first require this library as follows
 
@@ -70,11 +78,12 @@ var output = person.listen('my noise');
 ## API Documentation
 See full docs at: [API Docs](docs/api.md)
 
+<a name="history"></a>
 ## Release History
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-09-23  | v0.0.38  | Maintenance |
+| 2015-10-06  | v0.0.39  | Maintenance |
 | 2015-02-06  | v0.0.20  | Grunt cleanups. |
 | 2015-02-06  | v0.0.19  | Doc changes |
 | 2014-12-07  | v0.0.16  | Minor internal changes |
@@ -88,5 +97,6 @@ See full docs at: [API Docs](docs/api.md)
 | 2014-11-22  | v0.0.6   | Fixed pure require approach |
 | 2014-11-22  | v0.0.5   | Initial release. |
 
+<a name="license"></a>
 ## License
 Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.
