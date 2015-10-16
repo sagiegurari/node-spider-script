@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.39",
+  "version": "0.0.40",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "main": "index.js",
   "directories": {
@@ -41,6 +41,7 @@
     "grunt-mocha-test": "latest",
     "grunt-todos": "latest",
     "load-grunt-tasks": "latest",
+    "mocha": "latest",
     "mocha-lcov-reporter": "latest",
     "time-grunt": "latest"
   },
