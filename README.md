@@ -83,7 +83,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-11-03  | v0.0.42  | Maintenance |
+| 2015-11-04  | v0.0.43  | Maintenance |
 | 2015-02-06  | v0.0.20  | Grunt cleanups. |
 | 2015-02-06  | v0.0.19  | Doc changes |
 | 2014-12-07  | v0.0.16  | Minor internal changes |
