@@ -7,6 +7,7 @@
 
 * [Overview](#overview)
 * [Usage](#usage)
+* [Installation](#installation)
 * [API Documentation](docs/api.md)
 * [Release History](#history)
 * [License](#license)
@@ -75,6 +76,14 @@ var person = jsModule.create('my name');
 var output = person.listen('my noise');
 ```
 
+<a name="installation"></a>
+## Installation
+In order to use this library, just run the following npm install command:
+
+```sh
+npm install --save node-spider-script
+```
+
 ## API Documentation
 See full docs at: [API Docs](docs/api.md)
 
@@ -83,7 +92,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-11-05  | v0.0.45  | Maintenance |
+| 2015-11-21  | v0.0.46  | Maintenance |
 | 2015-02-06  | v0.0.20  | Grunt cleanups. |
 | 2015-02-06  | v0.0.19  | Doc changes |
 | 2014-12-07  | v0.0.16  | Minor internal changes |
