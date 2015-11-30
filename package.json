@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.48",
+  "version": "0.0.49",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -30,7 +30,7 @@
     "lint": "grunt lint",
     "docs": "grunt docs",
     "build": "grunt build",
-    "precommit": "npm run build"
+    "prepush": "npm run build"
   },
   "dependencies": {
     "spider-script": "^0.1.5",
