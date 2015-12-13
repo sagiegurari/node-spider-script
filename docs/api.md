@@ -1,15 +1,19 @@
 ## Classes
+
 <dl>
 <dt><a href="#SpiderLoader">SpiderLoader</a></dt>
 <dd></dd>
 </dl>
+
 ## Objects
+
 <dl>
 <dt><a href="#NodeSpiderScript">NodeSpiderScript</a> : <code>object</code></dt>
 <dd><p>Extends the require capabilities to allow loading of spider
 script files as JS files.</p>
 </dd>
 </dl>
+
 <a name="SpiderLoader"></a>
 ## SpiderLoader
 **Kind**: global class  
@@ -17,9 +21,9 @@ script files as JS files.</p>
 **Author:** Sagie Gur-Ari  
 
 * [SpiderLoader](#SpiderLoader)
-  * [new SpiderLoader()](#new_SpiderLoader_new)
-  * [#runSpiderScript2JS(spiderFile)](#SpiderLoader+runSpiderScript2JS) ⇒ <code>string</code>
-  * [#loadSpiderScript(spiderFile, [spiderModule])](#SpiderLoader+loadSpiderScript) ⇒ <code>object</code>
+    * [new SpiderLoader()](#new_SpiderLoader_new)
+    * [#runSpiderScript2JS(spiderFile)](#SpiderLoader+runSpiderScript2JS) ⇒ <code>string</code>
+    * [#loadSpiderScript(spiderFile, [spiderModule])](#SpiderLoader+loadSpiderScript) ⇒ <code>object</code>
 
 <a name="new_SpiderLoader_new"></a>
 ### new SpiderLoader()
@@ -97,8 +101,8 @@ return {
 ```
 
 * [NodeSpiderScript](#NodeSpiderScript) : <code>object</code>
-  * [.spiderLoader](#NodeSpiderScript.spiderLoader) : <code>[SpiderLoader](#SpiderLoader)</code>
-  * [.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
+    * [.spiderLoader](#NodeSpiderScript.spiderLoader) : <code>[SpiderLoader](#SpiderLoader)</code>
+    * [.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
 
 <a name="NodeSpiderScript.spiderLoader"></a>
 ### NodeSpiderScript.spiderLoader : <code>[SpiderLoader](#SpiderLoader)</code>

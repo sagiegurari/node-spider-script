@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.52",
+  "version": "0.0.53",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -54,6 +54,7 @@
     "grunt-mocha-test": "latest",
     "grunt-todos": "latest",
     "husky": "latest",
+    "load-grunt-configs": "latest",
     "load-grunt-tasks": "latest",
     "mocha": "latest",
     "mocha-lcov-reporter": "latest",
