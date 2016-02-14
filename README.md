@@ -96,7 +96,7 @@ See [contributing guide](docs/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-02-02  | v0.0.63 | Maintenance |
+| 2016-02-14  | v0.0.64 | Maintenance |
 | 2015-02-06  | v0.0.20 | Grunt cleanups. |
 | 2015-02-06  | v0.0.19 | Doc changes |
 | 2014-12-07  | v0.0.16 | Minor internal changes |
