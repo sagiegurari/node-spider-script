@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.64",
+  "version": "0.0.65",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -31,20 +31,17 @@
     "docs": "grunt docs",
     "build": "grunt build",
     "prepush": "npm run build",
-    "synclibs": "npm install && npm update"
+    "grunt": "grunt"
   },
   "dependencies": {
     "spider-script": "^0.1.5",
     "node.extend": "^1.1.5"
   },
   "devDependencies": {
-    "blanket": "latest",
     "chai": "latest",
     "grunt": "latest",
-    "grunt-blanket": "0.0.9",
     "grunt-cli": "latest",
     "grunt-contrib-clean": "latest",
-    "grunt-contrib-copy": "latest",
     "grunt-contrib-jshint": "latest",
     "grunt-coveralls": "latest",
     "grunt-eslint": "latest",
@@ -52,19 +49,13 @@
     "grunt-jsdoc-to-markdown": "latest",
     "grunt-jslint": "latest",
     "grunt-jsonlint": "latest",
-    "grunt-mocha-test": "latest",
+    "grunt-mocha-istanbul": "latest",
     "grunt-todos": "latest",
     "husky": "latest",
+    "istanbul": "latest",
     "load-grunt-configs": "latest",
     "load-grunt-tasks": "latest",
     "mocha": "latest",
-    "mocha-lcov-reporter": "latest",
-    "time-grunt": "latest",
-    "travis-cov": "latest"
-  },
-  "config": {
-    "travis-cov": {
-      "threshold": 100
-    }
+    "time-grunt": "latest"
   }
 }

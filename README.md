@@ -96,8 +96,8 @@ See [contributing guide](docs/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-02-14  | v0.0.64 | Maintenance |
-| 2015-02-06  | v0.0.20 | Grunt cleanups. |
+| 2016-02-21  | v0.0.65 | Maintenance |
+| 2015-02-06  | v0.0.20 | Grunt cleanups |
 | 2015-02-06  | v0.0.19 | Doc changes |
 | 2014-12-07  | v0.0.16 | Minor internal changes |
 | 2014-12-02  | v0.0.15 | Doc changes |
@@ -108,7 +108,7 @@ See [contributing guide](docs/CONTRIBUTING.md)
 | 2014-11-22  | v0.0.10 | Internal improvements |
 | 2014-11-22  | v0.0.7  | JSDoc changes |
 | 2014-11-22  | v0.0.6  | Fixed pure require approach |
-| 2014-11-22  | v0.0.5  | Initial release. |
+| 2014-11-22  | v0.0.5  | Initial release |
 
 <a name="license"></a>
 ## License
