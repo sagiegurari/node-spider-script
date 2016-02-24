@@ -9,7 +9,7 @@
 * [Usage](#usage)
 * [Installation](#installation)
 * [API Documentation](docs/api.md)
-* [Contributing](docs/CONTRIBUTING.md)
+* [Contributing](.github/CONTRIBUTING.md)
 * [Release History](#history)
 * [License](#license)
 
@@ -89,14 +89,14 @@ npm install --save node-spider-script
 See full docs at: [API Docs](docs/api.md)
 
 ## Contributing
-See [contributing guide](docs/CONTRIBUTING.md)
+See [contributing guide](.github/CONTRIBUTING.md)
 
 <a name="history"></a>
 ## Release History
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-02-21  | v0.0.65 | Maintenance |
+| 2016-02-24  | v0.0.66 | Maintenance |
 | 2015-02-06  | v0.0.20 | Grunt cleanups |
 | 2015-02-06  | v0.0.19 | Doc changes |
 | 2014-12-07  | v0.0.16 | Minor internal changes |
