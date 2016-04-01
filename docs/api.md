@@ -15,6 +15,7 @@ script files as JS files.</p>
 </dl>
 
 <a name="SpiderLoader"></a>
+
 ## SpiderLoader
 **Kind**: global class  
 **Access:** public  
@@ -26,11 +27,13 @@ script files as JS files.</p>
     * [#loadSpiderScript(spiderFile, [spiderModule])](#SpiderLoader+loadSpiderScript) ⇒ <code>object</code>
 
 <a name="new_SpiderLoader_new"></a>
+
 ### new SpiderLoader()
 The SpiderLoader enables to load spider script files and to load them into the
 node runtime as JS files.
 
 <a name="SpiderLoader+runSpiderScript2JS"></a>
+
 ### SpiderLoader#runSpiderScript2JS(spiderFile) ⇒ <code>string</code>
 Converts the provided spider file into JS script text
 
@@ -42,6 +45,7 @@ Converts the provided spider file into JS script text
 | spiderFile | <code>string</code> | The spider script file path |
 
 <a name="SpiderLoader+loadSpiderScript"></a>
+
 ### SpiderLoader#loadSpiderScript(spiderFile, [spiderModule]) ⇒ <code>object</code>
 Converts the provided spider file into JS script and loads it into
 the node runtime.
@@ -55,6 +59,7 @@ the node runtime.
 | [spiderModule] | <code>object</code> | The module for the spider script |
 
 <a name="NodeSpiderScript"></a>
+
 ## NodeSpiderScript : <code>object</code>
 Extends the require capabilities to allow loading of spider
 script files as JS files.
@@ -105,11 +110,13 @@ return {
     * [.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
 
 <a name="NodeSpiderScript.spiderLoader"></a>
+
 ### NodeSpiderScript.spiderLoader : <code>[SpiderLoader](#SpiderLoader)</code>
 The spider loader instance.
 
 **Access:** public  
 <a name="NodeSpiderScript.requireSpider"></a>
+
 ### NodeSpiderScript.requireSpider(spiderModule, fileName)
 The node require implementation for spider scripts.
 
