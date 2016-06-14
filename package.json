@@ -1,6 +1,6 @@
 {
   "name": "node-spider-script",
-  "version": "0.0.78",
+  "version": "0.0.79",
   "description": "Load spider script as any javascript modules under nodeJS runtime.",
   "author": {
     "name": "Sagie Gur-Ari",
