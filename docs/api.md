@@ -23,8 +23,8 @@ script files as JS files.</p>
 
 * [SpiderLoader](#SpiderLoader)
     * [new SpiderLoader()](#new_SpiderLoader_new)
-    * [#runSpiderScript2JS(spiderFile)](#SpiderLoader+runSpiderScript2JS) ⇒ <code>string</code>
-    * [#loadSpiderScript(spiderFile, [spiderModule])](#SpiderLoader+loadSpiderScript) ⇒ <code>object</code>
+    * [#runSpiderScript2JS(spiderFile)](#SpiderLoader+runSpiderScript2JS) ⇒ <code>String</code>
+    * [#loadSpiderScript(spiderFile, [spiderModule])](#SpiderLoader+loadSpiderScript) ⇒ <code>Object</code>
 
 <a name="new_SpiderLoader_new"></a>
 
@@ -34,29 +34,29 @@ node runtime as JS files.
 
 <a name="SpiderLoader+runSpiderScript2JS"></a>
 
-### SpiderLoader#runSpiderScript2JS(spiderFile) ⇒ <code>string</code>
+### SpiderLoader#runSpiderScript2JS(spiderFile) ⇒ <code>String</code>
 Converts the provided spider file into JS script text
 
-**Returns**: <code>string</code> - The JS string of the converted spider script  
+**Returns**: <code>String</code> - The JS string of the converted spider script  
 **Access:** public  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| spiderFile | <code>string</code> | The spider script file path |
+| spiderFile | <code>String</code> | The spider script file path |
 
 <a name="SpiderLoader+loadSpiderScript"></a>
 
-### SpiderLoader#loadSpiderScript(spiderFile, [spiderModule]) ⇒ <code>object</code>
+### SpiderLoader#loadSpiderScript(spiderFile, [spiderModule]) ⇒ <code>Object</code>
 Converts the provided spider file into JS script and loads it into
 the node runtime.
 
-**Returns**: <code>object</code> - The JS module  
+**Returns**: <code>Object</code> - The JS module  
 **Access:** public  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| spiderFile | <code>string</code> | The spider script file path |
-| [spiderModule] | <code>object</code> | The module for the spider script |
+| spiderFile | <code>String</code> | The spider script file path |
+| [spiderModule] | <code>Object</code> | The module for the spider script |
 
 <a name="NodeSpiderScript"></a>
 
@@ -124,6 +124,6 @@ The node require implementation for spider scripts.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| spiderModule | <code>object</code> | The module for the spider script |
-| fileName | <code>string</code> | The spider script file name |
+| spiderModule | <code>Object</code> | The module for the spider script |
+| fileName | <code>String</code> | The spider script file name |
 
