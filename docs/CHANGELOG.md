@@ -1,6 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-01-13  | v1.0.20 | Maintenance |
+| 2017-02-10  | v1.0.21 | Maintenance |
 | 2015-02-06  | v0.0.20 | Grunt cleanups |
 | 2015-02-06  | v0.0.19 | Doc changes |
 | 2014-12-07  | v0.0.16 | Minor internal changes |
