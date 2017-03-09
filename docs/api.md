@@ -18,8 +18,8 @@ script files as JS files.</p>
 
 ## SpiderLoader
 **Kind**: global class  
-**Access:** public  
-**Author:** Sagie Gur-Ari  
+**Access**: public  
+**Author**: Sagie Gur-Ari  
 
 * [SpiderLoader](#SpiderLoader)
     * [new SpiderLoader()](#new_SpiderLoader_new)
@@ -38,7 +38,7 @@ node runtime as JS files.
 Converts the provided spider file into JS script text
 
 **Returns**: <code>String</code> - The JS string of the converted spider script  
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ Converts the provided spider file into JS script and loads it into
 the node runtime.
 
 **Returns**: <code>Object</code> - The JS module  
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ Extends the require capabilities to allow loading of spider
 script files as JS files.
 
 **Kind**: global namespace  
-**Author:** Sagie Gur-Ari  
+**Author**: Sagie Gur-Ari  
 **Example**  
 In order to use spider scripts under node, you need to first require this library as follows:
 ```js
@@ -114,13 +114,13 @@ return {
 ### NodeSpiderScript.spiderLoader : <code>[SpiderLoader](#SpiderLoader)</code>
 The spider loader instance.
 
-**Access:** public  
+**Access**: public  
 <a name="NodeSpiderScript.requireSpider"></a>
 
 ### NodeSpiderScript.requireSpider(spiderModule, fileName)
 The node require implementation for spider scripts.
 
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Description |
 | --- | --- | --- |
