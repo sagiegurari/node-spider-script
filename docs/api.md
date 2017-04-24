@@ -106,12 +106,12 @@ return {
 ```
 
 * [NodeSpiderScript](#NodeSpiderScript) : <code>object</code>
-    * [.spiderLoader](#NodeSpiderScript.spiderLoader) : <code>[SpiderLoader](#SpiderLoader)</code>
+    * [.spiderLoader](#NodeSpiderScript.spiderLoader) : [<code>SpiderLoader</code>](#SpiderLoader)
     * [.requireSpider(spiderModule, fileName)](#NodeSpiderScript.requireSpider)
 
 <a name="NodeSpiderScript.spiderLoader"></a>
 
-### NodeSpiderScript.spiderLoader : <code>[SpiderLoader](#SpiderLoader)</code>
+### NodeSpiderScript.spiderLoader : [<code>SpiderLoader</code>](#SpiderLoader)
 The spider loader instance.
 
 **Access**: public  
