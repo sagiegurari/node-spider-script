@@ -1,6 +1,6 @@
 # node-spider-script
 
-[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Build Status](https://travis-ci.org/sagiegurari/node-spider-script.svg)](http://travis-ci.org/sagiegurari/node-spider-script) [![Coverage Status](https://coveralls.io/repos/sagiegurari/node-spider-script/badge.svg)](https://coveralls.io/r/sagiegurari/node-spider-script) [![bitHound Code](https://www.bithound.io/github/sagiegurari/node-spider-script/badges/code.svg)](https://www.bithound.io/github/sagiegurari/node-spider-script) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-spider-script.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-spider-script)<br>
+[![NPM Version](http://img.shields.io/npm/v/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Build Status](https://travis-ci.org/sagiegurari/node-spider-script.svg)](http://travis-ci.org/sagiegurari/node-spider-script) [![Coverage Status](https://coveralls.io/repos/sagiegurari/node-spider-script/badge.svg)](https://coveralls.io/r/sagiegurari/node-spider-script) [![Inline docs](http://inch-ci.org/github/sagiegurari/node-spider-script.svg?branch=master)](http://inch-ci.org/github/sagiegurari/node-spider-script)<br>
 [![License](https://img.shields.io/npm/l/node-spider-script.svg?style=flat)](https://github.com/sagiegurari/node-spider-script/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/node-spider-script.svg?style=flat)](https://www.npmjs.org/package/node-spider-script) [![Dependency Status](https://david-dm.org/sagiegurari/node-spider-script.svg)](https://david-dm.org/sagiegurari/node-spider-script) [![devDependency Status](https://david-dm.org/sagiegurari/node-spider-script/dev-status.svg)](https://david-dm.org/sagiegurari/node-spider-script?type=dev)
 
 > Load spider script as any javascript modules under nodeJS runtime.
@@ -96,7 +96,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2018-04-30  | v1.0.37 | Maintenance |
+| 2018-06-13  | v1.0.38 | Maintenance |
 | 2015-02-06  | v0.0.20 | Grunt cleanups |
 | 2014-12-07  | v0.0.16 | Minor internal changes |
 | 2014-12-01  | v0.0.14 | Added continues integration support for the project |

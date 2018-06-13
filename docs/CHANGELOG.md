@@ -1,6 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2018-04-30  | v1.0.37 | Maintenance |
+| 2018-06-13  | v1.0.38 | Maintenance |
 | 2015-02-06  | v0.0.20 | Grunt cleanups |
 | 2014-12-07  | v0.0.16 | Minor internal changes |
 | 2014-12-01  | v0.0.14 | Added continues integration support for the project |
