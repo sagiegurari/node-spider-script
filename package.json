@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "spider-script": "^0.1.5",
-    "node.extend": "^2.0.0"
+    "node.extend": "^2.0.1"
   },
   "devDependencies": {
     "chai": "latest",

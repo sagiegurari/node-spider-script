@@ -96,7 +96,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2018-06-13  | v1.0.38 | Maintenance |
+| 2018-10-31  | v1.0.39 | Maintenance |
 | 2015-02-06  | v0.0.20 | Grunt cleanups |
 | 2014-12-07  | v0.0.16 | Minor internal changes |
 | 2014-12-01  | v0.0.14 | Added continues integration support for the project |
